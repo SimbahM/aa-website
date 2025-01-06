@@ -6,13 +6,13 @@ class SpecialHeader extends HTMLElement {
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img class="aa-logo" src="./assets/appreciation-logo.svg" alt="">
+                    <img class="aa-logo" src="./assets/appreciation-logo.svg" alt="Appreciation Agency Logo">
                 </a>
             </div>
             <div class="nav-items">
                 <ul class="web">
                     <li>
-                        <a class="products-menu menu-item" href="">Products</a>
+                        <a class="products-menu menu-item" href="/">Products</a>
                         <div class="products-mega-menu">
                             <div class="mega-menu-container">
                                 <div class="products-card">
