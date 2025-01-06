@@ -5,7 +5,7 @@ class SpecialHeader extends HTMLElement {
         <nav>
         <div class="container">
             <div class="logo">
-                <a href="/">
+                <a href="./">
                     <img class="aa-logo" src="./assets/appreciation-logo.svg" alt="Appreciation Agency Logo">
                 </a>
             </div>
