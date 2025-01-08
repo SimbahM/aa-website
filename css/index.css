@@ -73,7 +73,7 @@ section.half-image .container h1.title {
 section.half-image .container p {
   font-size: 20px;
   color: white;
-  width: 600px;
+  width: 400px;
   text-align: center;
   font-weight: 300;
 }
@@ -242,7 +242,7 @@ section.why-choose-us-grid .container .fast-turn-around p {
   }
   section.half-image .container p {
     font-size: 20px;
-    width: 600px;
+    width: 400px;
     font-weight: 300;
   }
   section.uniforms {
@@ -373,7 +373,7 @@ section.why-choose-us-grid .container .fast-turn-around p {
   }
   section.half-image .container p {
     font-size: 20px;
-    width: 400px;
+    width: 300px;
     font-weight: 300;
   }
   section.uniforms {
