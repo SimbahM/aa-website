@@ -49,7 +49,7 @@ nav .container .nav-items ul.web li {
   justify-content: center;
   height: 100%;
 }
-nav .container .nav-items ul.web li:hover .products-mega-menu {
+nav .container .nav-items ul.web li:hover .overlay {
   display: block;
 }
 nav .container .nav-items ul.web li a.menu-item {
@@ -62,20 +62,25 @@ nav .container .nav-items ul.web li a.menu-item {
 nav .container .nav-items ul.web li a.menu-item:hover {
   color: var(--accent-color);
 }
-nav .container .nav-items ul.web li a.menu-item:hover .products-mega-menu {
-  display: block;
-}
-nav .container .nav-items ul.web li .products-mega-menu {
+nav .container .nav-items ul.web li .overlay {
   display: none;
-  background-color: white;
-  border-bottom: 1px solid rgb(230, 230, 230);
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.271);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: absolute;
   top: 55px;
   right: 0;
+  width: 100%;
+}
+nav .container .nav-items ul.web li .overlay .products-mega-menu {
+  background-color: white;
+  border-bottom: 1px solid rgb(230, 230, 230);
   height: 70vh;
   width: 100%;
 }
-nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container {
+nav .container .nav-items ul.web li .overlay .products-mega-menu .mega-menu-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1000px;
@@ -84,19 +89,19 @@ nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container {
   align-items: center;
   gap: 40px;
 }
-nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container .products-card {
+nav .container .nav-items ul.web li .overlay .products-mega-menu .mega-menu-container .products-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container .products-card h1 {
+nav .container .nav-items ul.web li .overlay .products-mega-menu .mega-menu-container .products-card h1 {
   font-size: 17px;
   color: var(--primary-color);
   text-align: center;
 }
-nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container .products-card a.button {
+nav .container .nav-items ul.web li .overlay .products-mega-menu .mega-menu-container .products-card a.button {
   padding: 13px 50px;
   border-radius: 3px;
   border: 1px solid var(--secondary-color);
@@ -109,7 +114,7 @@ nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container .pr
   text-decoration: none;
   transition: all 0.3s ease;
 }
-nav .container .nav-items ul.web li .products-mega-menu .mega-menu-container .products-card a.button:hover {
+nav .container .nav-items ul.web li .overlay .products-mega-menu .mega-menu-container .products-card a.button:hover {
   background-color: #233b55;
 }
 nav .container .nav-items ul.web .menu-burger {
@@ -186,7 +191,6 @@ nav .container .nav-items ul.web .menu-burger {
   nav .container .nav-items ul.mobile-menu details.mobile-products {
     font-size: 20px;
     color: var(--primary-color);
-    transition: all 0.4s ease-in-out;
     max-height: 50px;
   }
   nav .container .nav-items ul.mobile-menu details.mobile-products summary {
@@ -196,7 +200,7 @@ nav .container .nav-items ul.web .menu-burger {
   nav .container .nav-items ul.mobile-menu details.mobile-products .mm-container {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
   nav .container .nav-items ul.mobile-menu details.mobile-products .mm-container a.m-products-card {
     display: flex;

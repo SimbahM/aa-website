@@ -83,6 +83,13 @@ section.half-image {
             font-weight: 300;
         }
     }
+
+    .get-started {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/images/home/get-started.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 section.uniforms {

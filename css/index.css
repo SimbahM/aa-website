@@ -76,6 +76,12 @@ section.half-image .container p {
   text-align: center;
   font-weight: 300;
 }
+section.half-image .get-started {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../assets/images/home/get-started.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 section.uniforms {
   margin-bottom: 100px;
