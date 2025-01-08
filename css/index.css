@@ -43,6 +43,7 @@ section.hero-content p.subhead {
   font-size: 25px;
   max-width: 700px;
   text-align: center;
+  font-weight: 400;
 }
 
 section.half-image {

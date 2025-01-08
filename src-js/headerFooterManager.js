@@ -119,79 +119,85 @@ class SpecialFooter extends HTMLElement {
                 <div class="footer-directory-column">
                     <span>Office Supplies</span>
                     <li>
-                        <a href="">Premium Notebooks</a>
+                        <a href="./notebooks-&-journals">Premium Notebooks</a>
                     </li>
                     <li>
-                        <a href="">Pens & Writing</a>
+                        <a href="./pens-&-writing">Pens & Writing</a>
                     </li>
                     <li>
-                        <a href="">Desk Accessories</a>
+                        <a href="./desk-accessories">Desk Accessories</a>
                     </li>
                     <li>
-                        <a href="">Branded Stationery</a>
+                        <a href="./branded-stationry">Branded Stationery</a>
                     </li>
                 </div>
 
                 <div class="footer-directory-column">
                     <span>Corporate Wear</span>
                     <li>
-                        <a href="">Custom Branded</a>
+                        <a href="./custom-branded-uniforms">Custom Branded</a>
                     </li>
                     <li>
-                        <a href="">Business Casual</a>
+                        <a href="./business-casual-&-formal-wear">Business Casual</a>
                     </li>
                     <li>
-                        <a href="">Event Apparel</a>
+                        <a href="./knitwear">Knitwear</a>
                     </li>
                     <li>
-                        <a href="">Workwear</a>
+                        <a href="./work-wear">Workwear</a>
                     </li>
                 </div>
 
                 <div class="footer-directory-column">
                     <span>Office Gifts</span>
                     <li>
-                        <a href="">Gift Sets</a>
+                        <a href="./gift-sets">Gift Sets</a>
                     </li>
                     <li>
-                        <a href="">Drinkware</a>
+                        <a href="./drinkware">Drinkware</a>
                     </li>
                     <li>
-                        <a href="">Bags</a>
+                        <a href="./combo-sets">Combo Sets</a>
                     </li>
                     <li>
-                        <a href="">Umbrellas</a>
+                        <a href="./mobile-tech-gifts">Mobile Tech Sets</a>
                     </li>
                 </div>
 
                 <div class="footer-directory-column">
                     <span>Custom Apparel</span>
                     <li>
-                        <a href="">Hoodies & Sweatshirts</a>
+                        <a href="./hoodies">Hoodies & Sweatshirts</a>
                     </li>
                     <li>
-                        <a href="">T-Shirts & Polos</a>
+                        <a href="./t-shirts&polos">T-Shirts & Polos</a>
                     </li>
                     <li>
-                        <a href="">Jackets & Outerwear</a>
+                        <a href="./jackets">Jackets & Outerwear</a>
+                    </li>
+                    <li>
+                        <a href="./headwear">headwear And Accessories</a>
                     </li>
                 </div>
             </div>
+
+
+
 
             <div class="footer-links-mobile">
                 <details>
                     <summary>Office Suppliers</summary>
                     <li>
-                        <a href="">Premium Notebooks</a>
+                        <a href="./notebooks-&-journals">Premium Notebooks</a>
                     </li>
                     <li>
-                        <a href="">Pens & Writing</a>
+                        <a href="./pens-&-writing">Pens & Writing</a>
                     </li>
                     <li>
-                        <a href="">Desk Accessories</a>
+                        <a href="./desk-accessories">Desk Accessories</a>
                     </li>
                     <li>
-                        <a href="">Branded Stationery</a>
+                        <a href="./branded-stationry">Branded Stationery</a>
                     </li>
                 </details>
 
@@ -200,16 +206,16 @@ class SpecialFooter extends HTMLElement {
                 <details>
                     <summary>Corporate Wear</summary>
                     <li>
-                        <a href="">Custom Branded</a>
+                        <a href="./custom-branded-uniforms">Custom Branded</a>
                     </li>
                     <li>
-                        <a href="">Business Casual</a>
+                        <a href="./business-casual-&-formal-wear">Business Casual</a>
                     </li>
                     <li>
-                        <a href="">Event Apparel</a>
+                        <a href="./knitwear">Knitwear</a>
                     </li>
                     <li>
-                        <a href="">Workwear</a>
+                        <a href="./work-wear">Workwear</a>
                     </li>
                 </details>
 
@@ -218,16 +224,16 @@ class SpecialFooter extends HTMLElement {
                 <details>
                     <summary>Office Gifts</summary>
                     <li>
-                        <a href="">Gist Sets</a>
+                        <a href="./gift-sets">Gift Sets</a>
                     </li>
                     <li>
-                        <a href="">Drinkwear</a>
+                        <a href="./drinkware">Drinkware</a>
                     </li>
                     <li>
-                        <a href="">Bags</a>
+                        <a href="./combo-sets">Combo Sets</a>
                     </li>
                     <li>
-                        <a href="">Umbrellas</a>
+                        <a href="./mobile-tech-gifts">Mobile Tech Sets</a>
                     </li>
                 </details>
 
@@ -236,16 +242,16 @@ class SpecialFooter extends HTMLElement {
                 <details>
                     <summary>Custom Apparel</summary>
                     <li>
-                        <a href="">Hoodies</a>
+                        <a href="./hoodies">Hoodies & Sweatshirts</a>
                     </li>
                     <li>
-                        <a href="">T-Shirts & Polos</a>
+                        <a href="./t-shirts&polos">T-Shirts & Polos</a>
                     </li>
                     <li>
-                        <a href="">jackets & Outwear</a>
+                        <a href="./jackets">Jackets & Outerwear</a>
                     </li>
                     <li>
-                        <a href="">Branded Stationery</a>
+                        <a href="./headwear">headwear And Accessories</a>
                     </li>
                 </details>
             </div>
