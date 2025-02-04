@@ -1,0 +1,69 @@
+section.main-titles {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section.main-titles h1.title {
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary-color);
+}
+section.main-titles p {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  width: 700px;
+  line-height: 1.2em;
+}
+
+@media (max-width: 1024px) {
+  section.main-titles {
+    padding: 100px 0;
+    gap: 20px;
+  }
+  section.main-titles h1.title {
+    font-size: 30px;
+  }
+  section.main-titles p {
+    font-size: 40px;
+    font-weight: 600;
+    width: 500px;
+    line-height: 1.2em;
+  }
+  section.about-us-hero {
+    height: 60vh;
+  }
+}
+@media (max-width: 768px) {
+  section.main-titles {
+    padding: 70px 0;
+    gap: 20px;
+  }
+  section.main-titles h1.title {
+    font-size: 20px;
+  }
+  section.main-titles p {
+    font-size: 30px;
+    font-weight: 600;
+    width: 400px;
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 425px) {
+  section.main-titles {
+    padding: 50px 0;
+    gap: 10px;
+  }
+  section.main-titles h1.title {
+    font-size: 17px;
+  }
+  section.main-titles p {
+    font-size: 25px;
+    font-weight: 600;
+    width: 300px;
+    line-height: 1.2em;
+  }
+}/*# sourceMappingURL=main-titles.css.map */

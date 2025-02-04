@@ -1,0 +1,284 @@
+section.aa-services {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 20px;
+        gap: 20px;
+
+        h1.title {
+            color: var(--primary-color);
+            font-size: 30px;
+        }
+
+        p.pagebody {
+            font-size: 21px;
+            line-height: 1.4705882353;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+        }
+
+        .file-format-tags {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px 0;
+
+            span.title {
+                color: var(--primary-color);
+                font-size: 25px;
+            }
+
+            .tags {
+                display: grid;
+                grid-template-columns: repeat(5, 130px);
+                gap: 15px;
+
+                a.tag {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    gap: 10px;
+                    position: relative;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    .tooltip {
+                        display: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: -40px;
+                        background-color: rgb(205, 205, 205);
+                        padding: 5px 10px;
+                        border-radius: 50px;
+                        border: 2px solid rgb(187, 187, 187);
+                        transition: all .3s ease;
+
+                        p {
+                            text-align: center;
+                            font-size: 12px;
+                            color: var(--primary-color);
+                        }
+                    }
+
+                    &:hover {
+
+                        .tooltip {
+                            display: flex;
+                        }
+                    }
+
+                    img.pdf-image {
+                        width: 50px;
+                    }
+
+                    img.ai-image {
+                        width: 15px;
+                    }
+
+                    img.cdr-image {
+                        width: 60px;
+                    }
+
+                    img.jpeg-image {
+                        width: 50px;
+                    }
+
+
+                }
+
+                .pdf {
+                    border: 4px solid #FF2116;
+                    border-radius: 50px;
+                }
+
+                .ai {
+                    border: 4px solid #F47F21;
+                    border-radius: 50px;
+                    background-color: #26180F;
+
+                    span {
+                        color: #F47F21;
+                    }
+                }
+
+                .cdr {
+                    border-radius: 50px;
+                    background: linear-gradient(90deg, #85E31C, #298822);
+                }
+
+                .jpeg {
+                    border: 4px solid #007CB8;
+                    border-radius: 50px;
+
+                    span {
+                        color: #007CB8;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+
+                .dst {
+                    border-radius: 50px;
+                    background: linear-gradient(90deg, #6F1013, #DE2027);
+
+                    span {
+                        color: #e9eff3;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .windows {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            .windows-logo,
+            .mac-logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 7px;
+
+                img.windows-image {
+                    width: 30px;
+                }
+
+                img.mac-image {
+                    width: 60px;
+                }
+
+                span {
+                    color: #e9eff3;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    section.aa-services {
+        margin-bottom: 100px;
+
+        .container {
+
+            h1.title {
+                font-size: 30px;
+            }
+
+            p.pagebody {
+                font-size: 21px;
+            }
+
+            .file-format-tags {
+                gap: 20px;
+                margin: 20px 0;
+
+                span.title {
+                    font-size: 25px;
+                }
+
+                .tags {
+                    grid-template-columns: repeat(3, 130px);
+                    gap: 15px;
+                }
+            }
+
+            .image-gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    section.aa-services {
+        margin-bottom: 100px;
+
+        .container {
+
+            h1.title {
+                font-size: 30px;
+            }
+
+            p.pagebody {
+                font-size: 18px;
+            }
+
+            .file-format-tags {
+                gap: 20px;
+                margin: 20px 0;
+
+                span.title {
+                    font-size: 25px;
+                }
+
+                .tags {
+                    grid-template-columns: repeat(2, 130px);
+                    gap: 15px;
+                }
+            }
+
+            .windows {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+
+                .windows-logo,
+                .mac-logo {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 7px;
+
+                    img.windows-image {
+                        width: 20px;
+                    }
+
+                    img.mac-image {
+                        width: 50px;
+                    }
+
+                    p {
+                        color: var(--primary-color);
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .image-gallery {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

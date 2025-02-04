@@ -1,0 +1,104 @@
+section.about-us-hero {
+  background-image: url(../../assets/images/about/about.webp);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.pagebody-text {
+  padding: 100px 0;
+}
+section.pagebody-text .container {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+section.pagebody-text .container p {
+  font-size: 21px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  margin-bottom: 20px;
+}
+section.pagebody-text .container img {
+  margin: 50px 0;
+}
+section.pagebody-text .container h1 {
+  margin: 30px 0 20px 0;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+section.pagebody-text .container ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+section.pagebody-text .container ul li a {
+  text-decoration: none;
+  font-size: 21px;
+  color: rgb(88, 88, 88);
+}
+
+@media (max-width: 1024px) {
+  section.about-us-hero {
+    height: 60vh;
+  }
+}
+@media (max-width: 768px) {
+  section.about-us-hero {
+    height: 50vh;
+  }
+  section.pagebody-text {
+    padding: 50px 0;
+  }
+  section.pagebody-text .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  section.pagebody-text .container p {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  section.pagebody-text .container img {
+    margin: 50px 0;
+  }
+  section.pagebody-text .container h1 {
+    margin: 30px 0 20px 0;
+    font-size: 22px;
+  }
+  section.pagebody-text .container ul {
+    margin-left: 20px;
+  }
+  section.pagebody-text .container ul li a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 425px) {
+  section.pagebody-text {
+    padding: 30px 0;
+  }
+  section.pagebody-text .container {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  section.pagebody-text .container p {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  section.pagebody-text .container img {
+    margin: 50px 0;
+  }
+  section.pagebody-text .container h1 {
+    margin: 20px 0 20px 0;
+    font-size: 22px;
+  }
+  section.pagebody-text .container ul {
+    margin-left: 20px;
+  }
+  section.pagebody-text .container ul li a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=about-us.css.map */

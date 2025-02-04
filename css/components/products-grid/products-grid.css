@@ -1,0 +1,268 @@
+:root {
+  --primary-color: #365475;
+  --secondary-color: #5981B1;
+  --light-blue: #98BAE3;
+  --accent-color: #FCAF45;
+  --gray: #EEEEEE;
+}
+
+section.products-grid {
+  margin-bottom: 200px;
+}
+section.products-grid .container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+section.products-grid .container .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  background-color: var(--gray);
+  height: 600px;
+  gap: 30px;
+}
+section.products-grid .container .product-card img {
+  width: 300px;
+}
+section.products-grid .container .product-card h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 21px;
+}
+section.products-grid .container .product-card p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+section.products {
+  margin-bottom: 200px;
+}
+section.products .container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+section.products .container .products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  height: 600px;
+  gap: 40px;
+}
+section.products .container .products-card img {
+  width: 300px;
+}
+section.products .container .products-card span.tag {
+  color: var(--accent-color);
+}
+section.products .container .products-card .multiple-colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+section.products .container .products-card .multiple-colors img {
+  width: 90px;
+}
+section.products .container .products-card .multiple-colors p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  section.products-grid,
+  section.products {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  section.products-grid {
+    margin-bottom: 20px;
+  }
+  section.products-grid .container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  section.products-grid .container .product-card {
+    padding-bottom: 40px;
+    background-color: var(--gray);
+    height: 600px;
+    gap: 30px;
+  }
+  section.products-grid .container .product-card img {
+    width: 300px;
+  }
+  section.products-grid .container .product-card h1 {
+    font-size: 21px;
+  }
+  section.products-grid .container .product-card p {
+    font-weight: 400;
+  }
+  section.products {
+    margin-bottom: 20px;
+  }
+  section.products .container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  section.products .container .products-card {
+    padding-bottom: 30px;
+    background-color: var(--gray);
+    height: 450px;
+    gap: 30px;
+  }
+  section.products .container .products-card img {
+    width: 200px;
+  }
+  section.products .container .products-card .multiple-colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  section.products .container .products-card .multiple-colors img {
+    width: 90px;
+  }
+  section.products .container .products-card .multiple-colors h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  section.products-grid {
+    margin-bottom: 20px;
+  }
+  section.products-grid .container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  section.products-grid .container .product-card {
+    padding-bottom: 50px;
+    background-color: var(--gray);
+    height: 600px;
+    gap: 30px;
+  }
+  section.products-grid .container .product-card img {
+    width: 300px;
+  }
+  section.products-grid .container .product-card h1 {
+    font-size: 21px;
+  }
+  section.products-grid .container .product-card p {
+    font-weight: 400;
+  }
+  section.products {
+    margin-bottom: 10px;
+  }
+  section.products .container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  section.products .container .products-card {
+    padding-bottom: 30px;
+    height: 400px;
+    gap: 30px;
+  }
+  section.products .container .products-card img {
+    width: 150px;
+  }
+  section.products .container .products-card .multiple-colors {
+    gap: 8px;
+  }
+  section.products .container .products-card .multiple-colors img {
+    width: 90px;
+  }
+  section.products .container .products-card .multiple-colors h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  section.products-grid {
+    margin-bottom: 10px;
+  }
+  section.products-grid .container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  section.products-grid .container .product-card {
+    padding-bottom: 30px;
+    background-color: var(--gray);
+    height: 500px;
+    gap: 10px;
+  }
+  section.products-grid .container .product-card img {
+    width: 250px;
+  }
+  section.products-grid .container .product-card h1 {
+    font-size: 17px;
+  }
+  section.products-grid .container .product-card p {
+    font-size: 14px;
+  }
+  section.products {
+    margin-bottom: 10px;
+  }
+  section.products .container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  section.products .container .products-card {
+    padding-bottom: 30px;
+    height: 450px;
+    gap: 30px;
+  }
+  section.products .container .products-card img {
+    width: 200px;
+  }
+  section.products .container .products-card .multiple-colors {
+    gap: 8px;
+  }
+  section.products .container .products-card .multiple-colors img {
+    width: 90px;
+  }
+  section.products .container .products-card .multiple-colors h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=products-grid.css.map */

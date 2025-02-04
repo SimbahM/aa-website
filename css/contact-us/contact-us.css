@@ -1,0 +1,225 @@
+section.contacts {
+  padding: 0 20px;
+  display: flex;
+}
+section.contacts .container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+section.contacts .container .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+}
+section.contacts .container .contact-info .titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.contacts .container .contact-info .titles h1 {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+section.contacts .container .contact-info .titles p.intro-text {
+  font-size: 40px;
+  line-height: 1.1em;
+}
+section.contacts .container .contact-info .contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+section.contacts .container .contact-info .contact-details a.email,
+section.contacts .container .contact-info .contact-details a.tel {
+  text-decoration: none;
+  color: gray;
+  font-size: 23px;
+}
+section.contacts .container .contact-info .contact-details a.email:hover,
+section.contacts .container .contact-info .contact-details a.tel:hover {
+  text-decoration: underline;
+}
+section.contacts .container .contact-info .contact-details .second-tel {
+  margin-top: -10px;
+}
+section.contacts .container .contact-info .contact-details .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section.contacts .container .contact-info .contact-details .social-media a img {
+  width: 20px;
+}
+section.contacts .container .contact-info .address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.contacts .container .contact-info .address h1 {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+section.contacts .container .contact-info .address p {
+  font-size: 19px;
+}
+section.contacts .container .image {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+section.contacts .container .image img {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  section.contacts {
+    padding: 0 20px;
+    display: flex;
+  }
+  section.contacts .container {
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
+  section.contacts .container .contact-info {
+    gap: 30px;
+    flex: 1;
+  }
+  section.contacts .container .contact-info .titles {
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .titles h1 {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  section.contacts .container .contact-info .titles p.intro-text {
+    font-size: 35px;
+    line-height: 1.1em;
+  }
+  section.contacts .container .contact-info .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .contact-details a.email,
+  section.contacts .container .contact-info .contact-details a.tel {
+    text-decoration: none;
+    color: gray;
+    font-size: 19px;
+  }
+  section.contacts .container .contact-info .contact-details a.email:hover,
+  section.contacts .container .contact-info .contact-details a.tel:hover {
+    text-decoration: underline;
+  }
+  section.contacts .container .contact-info .contact-details .second-tel {
+    margin-top: -10px;
+  }
+  section.contacts .container .contact-info .contact-details .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .contact-details .social-media a img {
+    width: 20px;
+  }
+  section.contacts .container .contact-info .address {
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .address h1 {
+    font-size: 19px;
+    color: var(--primary-color);
+  }
+  section.contacts .container .contact-info .address p {
+    font-size: 19px;
+  }
+  section.contacts .container .image {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  section.contacts .container .image img {
+    display: flex;
+  }
+}
+@media (max-width: 630px) {
+  section.contacts {
+    padding: 70px 20px;
+    display: flex;
+  }
+  section.contacts .container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section.contacts .container .contact-info {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+  }
+  section.contacts .container .contact-info .titles {
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .titles h1 {
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  section.contacts .container .contact-info .titles p.intro-text {
+    font-size: 35px;
+    line-height: 1.1em;
+    text-align: center;
+  }
+  section.contacts .container .contact-info .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .contact-details a.email,
+  section.contacts .container .contact-info .contact-details a.tel {
+    text-decoration: none;
+    color: gray;
+    font-size: 19px;
+  }
+  section.contacts .container .contact-info .contact-details a.email:hover,
+  section.contacts .container .contact-info .contact-details a.tel:hover {
+    text-decoration: underline;
+  }
+  section.contacts .container .contact-info .contact-details .second-tel {
+    margin-top: -10px;
+  }
+  section.contacts .container .contact-info .contact-details .social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  section.contacts .container .contact-info .contact-details .social-media a img {
+    width: 20px;
+  }
+  section.contacts .container .contact-info .address {
+    gap: 10px;
+    align-items: center;
+  }
+  section.contacts .container .contact-info .address h1 {
+    font-size: 19px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  section.contacts .container .contact-info .address p {
+    font-size: 19px;
+    text-align: center;
+  }
+  section.contacts .container .image {
+    display: none;
+  }
+}/*# sourceMappingURL=contact-us.css.map */
