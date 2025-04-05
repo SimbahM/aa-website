@@ -4,7 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     // outline: solid 1px lime;
 }
 
@@ -14,21 +25,28 @@ svg {
     width: 100%;
 }
 
+div,
+a,
+span,
+img {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 h1 {
     text-transform: uppercase;
     font-weight: 400;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 }
 
 p {
     font-weight: 300;
     line-height: 1.4em;
-    letter-spacing: .012em;
+    letter-spacing: 0.012em;
     color: rgb(100, 103, 110);
 }
 
 span {
-    letter-spacing: .012em;
+    letter-spacing: 0.012em;
 }
 
 html {
@@ -37,10 +55,10 @@ html {
 
 :root {
     --primary-color: #365475;
-    --secondary-color: #5981B1;
-    --light-blue: #98BAE3;
-    --accent-color: #FCAF45;
-    --gray: #EEEEEE;
+    --secondary-color: #5981b1;
+    --light-blue: #98bae3;
+    --accent-color: #fcaf45;
+    --gray: #eeeeee;
 }
 
 .light-button {
@@ -53,7 +71,7 @@ html {
     backdrop-filter: blur(10px);
     color: #1a3149;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
         background-color: rgba(255, 255, 255, 0.7);
@@ -70,7 +88,7 @@ html {
     backdrop-filter: blur(10px);
     color: white;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
         background-color: #233b55;
@@ -78,7 +96,6 @@ html {
 }
 
 @media (max-width: 768px) {
-
     .light-button {
         padding: 10px 30px;
         font-size: 13px;

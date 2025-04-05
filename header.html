@@ -1,296 +1,392 @@
 <!DOCTYPE html>
 
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Appreciation Agency</title>
+		<meta
+			name="description"
+			content="
+        Appricio Agency t/a THE Appreciation Agency is a wholly owned Zimbabwean company specializing in supplying corporate gifts and promotional material, We focus on providing quality products sourced from all over the world."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/components/components.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="icon" href="./assets/icons/aa-favicon-image.png" />
+		<link rel="stylesheet" href="./css/components/header/header.css" />
+		<link rel="stylesheet" href="./css/components/footer/footer.css" />
+	</head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Appreciation Agency</title>
-    <meta name="description"
-        content="
-        Appricio Agency t/a THE Appreciation Agency is a wholly owned Zimbabwean company specializing in supplying corporate gifts and promotional material, We focus on providing quality products sourced from all over the world.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/components/components.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" href="./assets/icons/aa-favicon-image.png">
-    <link rel="stylesheet" href="./css/components/header/header.css">
-    <link rel="stylesheet" href="./css/components/footer/footer.css">
-</head>
+	<body>
+		<nav>
+			<div class="container">
+				<a href="/" class="logo">
+					<img
+						src="./assets/appreciation-logo.svg"
+						alt="Appreciation Agency Logo"
+					/>
+				</a>
+				<div class="mobile-hamburger">
+					<div class="menu-icon">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="web-nav-items">
+					<ul>
+						<li>
+							<a href="">
+								<div class="products">
+									<span>Products</span>
+									<img
+										src="./assets/icons/arrow-down.svg"
+										alt="Arrown Down Icon"
+									/>
+								</div>
+							</a>
 
-<body>
+							<div class="overlay"></div>
 
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="./">
-                    <img class="aa-logo" src="./assets/appreciation-logo.svg" alt="">
-                </a>
-            </div>
-            <div class="nav-items">
-                <ul class="web">
-                    <li>
-                        <a class="products-menu menu-item" href="">Products</a>
-                        <div class="overlay">
-                            <div class="products-mega-menu">
-                                <div class="mega-menu-container">
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/stationary.webp"
-                                            alt="Diary Book and Pen">
-                                        <h1>Office Supplies</h1>
-                                        <a href="./stationery-&-office-supplies" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/uniforms.png" alt="Diary Book and Pen">
-                                        <h1>Corporate Wear</h1>
-                                        <a href="./corporate-wear" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/custome-apparel.png"
-                                            alt="Diary Book and Pen">
-                                        <h1>Apparel</h1>
-                                        <a href="./apparel" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/gifts.webp" alt="Diary Book and Pen">
-                                        <h1>Gifts</h1>
-                                        <a href="./gifts" class="button">View Products</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./services">Services</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./contact-us">Contact Us</a>
-                    </li>
-                    <div onclick=showMobileMenu() class="menu-burger">
-                        <img src="./assets/icons/menu-burger.svg" alt="">
-                    </div>
-                </ul>
+							<div class="mega-menu">
+								<div class="container">
+									<a
+										href="./stationery-&-office-supplies"
+										class="product-card"
+									>
+										<img
+											src="./assets/images/home/mega-menu/stationery-&-office-supplies.webp"
+											alt="Office Suppliers"
+										/>
+										<h1>Office Supplies</h1>
+									</a>
 
-                <!-- Mobile Menu  -->
+									<a
+										href="./corporate-wear"
+										class="product-card"
+									>
+										<img
+											src="./assets/images/home/mega-menu/corporate-wear.webp"
+											alt="Corporate Wear"
+										/>
+										<h1>Coporate Wear</h1>
+									</a>
 
-                <ul class="mobile-menu">
-                    <div onclick=hideMobileMenu() class="close-icon">
-                        <img src="./assets/icons/close-icon.svg" alt="">
-                    </div>
+									<a href="./apparel" class="product-card">
+										<img
+											src="./assets/images/home/mega-menu/apparel.webp"
+											alt="Apparel"
+										/>
+										<h1>Apparel</h1>
+									</a>
 
-                    <details class="mobile-products">
-                        <summary>PRODUCTS</summary>
-                        <div class="mm-container">
-                            <a href="./stationery-&-office-supplies" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/stationary.webp" alt="Diary Book and Pen">
-                                <h1>Office Supplies</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./corporate-wear" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/uniforms.png" alt="Diary Book and Pen">
-                                <h1>Corporate Wear</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./apparel" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/custome-apparel.png" alt="Diary Book and Pen">
-                                <h1>Apparel</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./gifts" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/gifts.webp" alt="Diary Book and Pen">
-                                <h1>Gifts</h1>
-                            </a>
-                            <hr class="m-divider">
-                        </div>
-                    </details>
+									<a href="./gifts" class="product-card">
+										<img
+											src="./assets/images/home/mega-menu/gifts.webp"
+											alt="Gifts"
+										/>
+										<h1>Gifts</h1>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./services">Services</a>
+						</li>
+						<li>
+							<a href="./about-us">About Us</a>
+						</li>
+						<li>
+							<a href="contact-us">Contact Us</a>
+						</li>
+					</ul>
+				</div>
 
-                    <li>
-                        <a class="menu-item" href="./services">Services</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./contact-us">Contact Us</a>
-                    </li>
-                    <hr>
-                    <div class="social-media">
-                        <a target="_blank"
-                            href="https://www.facebook.com/profile.php?id=61570382283221&mibextid=ZbWKwL">
-                            <img src="./assets/icons/facebook.svg" alt="">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/company/appreciation-agency">
-                            <img src="./assets/icons/linkedin.svg" alt="">
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/theappreciationagency/">
-                            <img src="./assets/icons/instagram.svg" alt="">
-                        </a>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+				<!-- Mobile Menu Items TODO: -->
 
+				<div class="mobile-nav-items">
+					<ul>
+						<li>
+							<div class="mobile-mega-menu-controller" href="">
+								<div class="products">
+									<span>Products</span>
+									<img
+										class=""
+										src="./assets/icons/arrow-down.svg"
+										alt="Arrown Down Icon"
+									/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./services">Services</a>
+						</li>
+						<li>
+							<a href="./about-us">About Us</a>
+						</li>
+						<li>
+							<a href="./contact-us">Contact Us</a>
+						</li>
+					</ul>
+					<div class="social-media">
+						<div class="social-media">
+							<hr />
+							<div class="icons">
+								<ul>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.facebook.com/profile.php?id=61570382283221&mibextid=ZbWKwL"
+											><img
+												src="./assets/icons/facebook.svg"
+												alt="Facebook Icon"
+										/></a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.instagram.com/theappreciationagency/"
+											><img
+												src="./assets/icons/instagram.svg"
+												alt="Instagram icon"
+										/></a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.linkedin.com/company/appreciation-agency"
+											><img
+												src="./assets/icons/linkedin.svg"
+												alt="Linkedin Icon"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <div class="footer-directory-column">
-                    <span>Office Supplies</span>
-                    <li>
-                        <a href="./notebooks-&-journals">Premium Notebooks</a>
-                    </li>
-                    <li>
-                        <a href="./pens-&-writing">Pens & Writing</a>
-                    </li>
-                    <li>
-                        <a href="./desk-accessories">Desk Accessories</a>
-                    </li>
-                    <li>
-                        <a href="./branded-stationry">Branded Stationery</a>
-                    </li>
-                </div>
+				<div class="mobile-mega-menu">
+					<div class="items">
+						<div class="back-icon">
+							<img
+								class="back"
+								src="./assets/icons/arrow-down.svg"
+								alt="Arrow Icon"
+							/>
+							<p>Back</p>
+						</div>
 
-                <div class="footer-directory-column">
-                    <span>Corporate Wear</span>
-                    <li>
-                        <a href="./custom-branded-uniforms">Custom Branded</a>
-                    </li>
-                    <li>
-                        <a href="./business-casual-&-formal-wear">Business Casual</a>
-                    </li>
-                    <li>
-                        <a href="./knitwear">Knitwear</a>
-                    </li>
-                    <li>
-                        <a href="./work-wear">Workwear</a>
-                    </li>
-                </div>
+						<a
+							href="./stationery-&-office-supplies"
+							class="product-card"
+						>
+							<img
+								src="./assets/images/home/mega-menu/stationery-&-office-supplies.webp"
+								alt="Office Suppliers"
+							/>
+							<h1>Office Supplies</h1>
+						</a>
 
-                <div class="footer-directory-column">
-                    <span>Office Gifts</span>
-                    <li>
-                        <a href="./gift-sets">Gift Sets</a>
-                    </li>
-                    <li>
-                        <a href="./drinkware">Drinkware</a>
-                    </li>
-                    <li>
-                        <a href="./combo-sets">Combo Sets</a>
-                    </li>
-                    <li>
-                        <a href="./mobile-tech-gifts">Mobile Tech Sets</a>
-                    </li>
-                </div>
+						<a href="./corporate-wear" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/corporate-wear.webp"
+								alt="Coporate Wear"
+							/>
+							<h1>Coporate Wear</h1>
+						</a>
 
-                <div class="footer-directory-column">
-                    <span>Custom Apparel</span>
-                    <li>
-                        <a href="./hoodies">Hoodies & Sweatshirts</a>
-                    </li>
-                    <li>
-                        <a href="./t-shirts&polos">T-Shirts & Polos</a>
-                    </li>
-                    <li>
-                        <a href="./jackets">Jackets & Outerwear</a>
-                    </li>
-                    <li>
-                        <a href="./headwear">headwear And Accessories</a>
-                    </li>
-                </div>
-            </div>
+						<a href="./apparel" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/apparel.webp"
+								alt="Apparel"
+							/>
+							<h1>Apparel</h1>
+						</a>
 
+						<a href="./gifts" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/gifts.webp"
+								alt="Gifts"
+							/>
+							<h1>Gifts</h1>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
 
+		<!-- TODO: -->
 
+		<footer>
+			<div class="container">
+				<div class="footer-links">
+					<div class="footer-directory-column">
+						<span>Office Supplies</span>
+						<li>
+							<a href="./notebooks-&-journals"
+								>Premium Notebooks</a
+							>
+						</li>
+						<li>
+							<a href="./pens-&-writing">Pens & Writing</a>
+						</li>
+						<li>
+							<a href="./desk-accessories">Desk Accessories</a>
+						</li>
+						<li>
+							<a href="./branded-stationry">Branded Stationery</a>
+						</li>
+					</div>
 
-            <div class="footer-links-mobile">
-                <details>
-                    <summary>Office Suppliers</summary>
-                    <li>
-                        <a href="./notebooks-&-journals">Premium Notebooks</a>
-                    </li>
-                    <li>
-                        <a href="./pens-&-writing">Pens & Writing</a>
-                    </li>
-                    <li>
-                        <a href="./desk-accessories">Desk Accessories</a>
-                    </li>
-                    <li>
-                        <a href="./branded-stationry">Branded Stationery</a>
-                    </li>
-                </details>
+					<div class="footer-directory-column">
+						<span>Corporate Wear</span>
+						<li>
+							<a href="./custom-branded-uniforms"
+								>Custom Branded</a
+							>
+						</li>
+						<li>
+							<a href="./business-casual-&-formal-wear"
+								>Business Casual</a
+							>
+						</li>
+						<li>
+							<a href="./knitwear">Knitwear</a>
+						</li>
+						<li>
+							<a href="./work-wear">Workwear</a>
+						</li>
+					</div>
 
-                <hr class="divider">
+					<div class="footer-directory-column">
+						<span>Office Gifts</span>
+						<li>
+							<a href="./gift-sets">Gift Sets</a>
+						</li>
+						<li>
+							<a href="./drinkware">Drinkware</a>
+						</li>
+						<li>
+							<a href="./combo-sets">Combo Sets</a>
+						</li>
+						<li>
+							<a href="./mobile-tech-gifts">Mobile Tech Sets</a>
+						</li>
+					</div>
 
-                <details>
-                    <summary>Corporate Wear</summary>
-                    <li>
-                        <a href="./custom-branded-uniforms">Custom Branded</a>
-                    </li>
-                    <li>
-                        <a href="./business-casual-&-formal-wear">Business Casual</a>
-                    </li>
-                    <li>
-                        <a href="./knitwear">Knitwear</a>
-                    </li>
-                    <li>
-                        <a href="./work-wear">Workwear</a>
-                    </li>
-                </details>
+					<div class="footer-directory-column">
+						<span>Custom Apparel</span>
+						<li>
+							<a href="./hoodies">Hoodies & Sweatshirts</a>
+						</li>
+						<li>
+							<a href="./t-shirts&polos">T-Shirts & Polos</a>
+						</li>
+						<li>
+							<a href="./jackets">Jackets & Outerwear</a>
+						</li>
+						<li>
+							<a href="./headwear">headwear And Accessories</a>
+						</li>
+					</div>
+				</div>
 
-                <hr class="divider">
+				<div class="footer-links-mobile">
+					<details>
+						<summary>Office Suppliers</summary>
+						<li>
+							<a href="./notebooks-&-journals"
+								>Premium Notebooks</a
+							>
+						</li>
+						<li>
+							<a href="./pens-&-writing">Pens & Writing</a>
+						</li>
+						<li>
+							<a href="./desk-accessories">Desk Accessories</a>
+						</li>
+						<li>
+							<a href="./branded-stationry">Branded Stationery</a>
+						</li>
+					</details>
 
-                <details>
-                    <summary>Office Gifts</summary>
-                    <li>
-                        <a href="./gift-sets">Gift Sets</a>
-                    </li>
-                    <li>
-                        <a href="./drinkware">Drinkware</a>
-                    </li>
-                    <li>
-                        <a href="./combo-sets">Combo Sets</a>
-                    </li>
-                    <li>
-                        <a href="./mobile-tech-gifts">Mobile Tech Sets</a>
-                    </li>
-                </details>
+					<hr class="divider" />
 
-                <hr class="divider">
+					<details>
+						<summary>Corporate Wear</summary>
+						<li>
+							<a href="./custom-branded-uniforms"
+								>Custom Branded</a
+							>
+						</li>
+						<li>
+							<a href="./business-casual-&-formal-wear"
+								>Business Casual</a
+							>
+						</li>
+						<li>
+							<a href="./knitwear">Knitwear</a>
+						</li>
+						<li>
+							<a href="./work-wear">Workwear</a>
+						</li>
+					</details>
 
-                <details>
-                    <summary>Custom Apparel</summary>
-                    <li>
-                        <a href="./hoodies">Hoodies & Sweatshirts</a>
-                    </li>
-                    <li>
-                        <a href="./t-shirts&polos">T-Shirts & Polos</a>
-                    </li>
-                    <li>
-                        <a href="./jackets">Jackets & Outerwear</a>
-                    </li>
-                    <li>
-                        <a href="./headwear">headwear And Accessories</a>
-                    </li>
-                </details>
-            </div>
+					<hr class="divider" />
 
-            <hr class="divider">
+					<details>
+						<summary>Office Gifts</summary>
+						<li>
+							<a href="./gift-sets">Gift Sets</a>
+						</li>
+						<li>
+							<a href="./drinkware">Drinkware</a>
+						</li>
+						<li>
+							<a href="./combo-sets">Combo Sets</a>
+						</li>
+						<li>
+							<a href="./mobile-tech-gifts">Mobile Tech Sets</a>
+						</li>
+					</details>
 
-            <div class="copyright">
-                <span>
-                    Copyright © 2025 Appriciation Agency. All Rights Reserved.
-                </span>
-                <a target="_blank" href="https://simbahm.com/">
-                    <img src="./assets/icons/designed-by-simbahm.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </footer>
+					<hr class="divider" />
 
-    <script src="./src-js/main.js" async defer></script>
-</body>
+					<details>
+						<summary>Custom Apparel</summary>
+						<li>
+							<a href="./hoodies">Hoodies & Sweatshirts</a>
+						</li>
+						<li>
+							<a href="./t-shirts&polos">T-Shirts & Polos</a>
+						</li>
+						<li>
+							<a href="./jackets">Jackets & Outerwear</a>
+						</li>
+						<li>
+							<a href="./headwear">headwear And Accessories</a>
+						</li>
+					</details>
+				</div>
 
+				<hr class="divider" />
+
+				<div class="copyright">
+					<span>
+						Copyright © 2025 Appriciation Agency. All Rights
+						Reserved.
+					</span>
+					<a target="_blank" href="https://simbahm.com/">
+						<img
+							src="./assets/icons/designed-by-simbahm.svg"
+							alt=""
+						/>
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./src-js/main.js" async defer></script>
+	</body>
 </html>

@@ -1,127 +1,209 @@
 class SpecialHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = 
-        `
+	connectedCallback() {
+		this.innerHTML = `
         <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="./">
-                    <img class="aa-logo" src="./assets/appreciation-logo.svg" alt="">
-                </a>
-            </div>
-            <div class="nav-items">
-                <ul class="web">
-                    <li>
-                        <a class="products-menu menu-item" href="">Products</a>
-                        <div class="overlay">
-                            <div class="products-mega-menu">
-                                <div class="mega-menu-container">
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/stationary.webp"
-                                            alt="Diary Book and Pen">
-                                        <h1>Office Supplies</h1>
-                                        <a href="./stationery-&-office-supplies" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/uniforms.png" alt="Diary Book and Pen">
-                                        <h1>Corporate Wear</h1>
-                                        <a href="./corporate-wear" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/custome-apparel.png"
-                                            alt="Diary Book and Pen">
-                                        <h1>Apparel</h1>
-                                        <a href="./apparel" class="button">View Products</a>
-                                    </div>
-                                    <div class="products-card">
-                                        <img src="./assets/images/home/mega-menu/gifts.webp" alt="Diary Book and Pen">
-                                        <h1>Gifts</h1>
-                                        <a href="./gifts" class="button">View Products</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./services">Services</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./contact-us">Contact Us</a>
-                    </li>
-                    <div onclick=showMobileMenu() class="menu-burger">
-                        <img src="./assets/icons/menu.svg" alt="">
-                    </div>
-                </ul>
+			<div class="container">
+				<a href="/" class="logo">
+					<img
+						src="./assets/appreciation-logo.svg"
+						alt="Appreciation Agency Logo"
+					/>
+				</a>
+				<div class="mobile-hamburger">
+					<div class="menu-icon">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="web-nav-items">
+					<ul>
+						<li>
+							<a href="">
+								<div class="products">
+									<span>Products</span>
+									<img
+										src="./assets/icons/arrow-down.svg"
+										alt="Arrown Down Icon"
+									/>
+								</div>
+							</a>
 
-                <!-- Mobile Menu  -->
+							<div class="overlay"></div>
 
-                <ul class="mobile-menu">
-                    <div onclick=hideMobileMenu() class="close-icon">
-                        <img src="./assets/icons/close-icon.svg" alt="">
-                    </div>
+							<div class="mega-menu">
+								<div class="container">
+									<a
+										href="./stationery-&-office-supplies"
+										class="product-card"
+									>
+										<img
+											src="./assets/images/home/mega-menu/stationery-&-office-supplies.webp"
+											alt="Office Suppliers"
+										/>
+										<h1>Office Supplies</h1>
+									</a>
 
-                    <details class="mobile-products">
-                        <summary>PRODUCTS</summary>
-                        <div class="mm-container">
-                            <a href="./stationery-&-office-supplies" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/stationary.webp" alt="Diary Book and Pen">
-                                <h1>Office Supplies</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./corporate-wear" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/uniforms.png" alt="Diary Book and Pen">
-                                <h1>Corporate Wear</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./apparel" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/custome-apparel.png" alt="Diary Book and Pen">
-                                <h1>Apparel</h1>
-                            </a>
-                            <hr class="m-divider">
-                            <a href="./gifts" class="m-products-card">
-                                <img src="./assets/images/home/mega-menu/gifts.webp" alt="Diary Book and Pen">
-                                <h1>Gifts</h1>
-                            </a>
-                            <hr class="m-divider">
-                        </div>
-                    </details>
+									<a
+										href="./corporate-wear"
+										class="product-card"
+									>
+										<img
+											src="./assets/images/home/mega-menu/corporate-wear.webp"
+											alt="Corporate Wear"
+										/>
+										<h1>Coporate Wear</h1>
+									</a>
 
-                    <li>
-                        <a class="menu-item" href="./services">Services</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="./contact-us">Contact Us</a>
-                    </li>
-                    <hr>
-                    <div class="social-media">
-                        <a target="_blank"
-                            href="https://www.facebook.com/profile.php?id=61570382283221&mibextid=ZbWKwL">
-                            <img src="./assets/icons/facebook.svg" alt="">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/company/appreciation-agency">
-                            <img src="./assets/icons/linkedin.svg" alt="">
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/theappreciationagency/">
-                            <img src="./assets/icons/instagram.svg" alt="">
-                        </a>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+									<a href="./apparel" class="product-card">
+										<img
+											src="./assets/images/home/mega-menu/apparel.webp"
+											alt="Apparel"
+										/>
+										<h1>Apparel</h1>
+									</a>
+
+									<a href="./gifts" class="product-card">
+										<img
+											src="./assets/images/home/mega-menu/gifts.webp"
+											alt="Gifts"
+										/>
+										<h1>Gifts</h1>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./services">Services</a>
+						</li>
+						<li>
+							<a href="./about-us">About Us</a>
+						</li>
+						<li>
+							<a href="contact-us">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Mobile Menu Items TODO: -->
+
+				<div class="mobile-nav-items">
+					<ul>
+						<li>
+							<div class="mobile-mega-menu-controller" href="">
+								<div class="products">
+									<span>Products</span>
+									<img
+										class=""
+										src="./assets/icons/arrow-down.svg"
+										alt="Arrown Down Icon"
+									/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="./services">Services</a>
+						</li>
+						<li>
+							<a href="./about-us">About Us</a>
+						</li>
+						<li>
+							<a href="./contact-us">Contact Us</a>
+						</li>
+					</ul>
+					<div class="social-media">
+						<div class="social-media">
+							<hr />
+							<div class="icons">
+								<ul>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.facebook.com/profile.php?id=61570382283221&mibextid=ZbWKwL"
+											><img
+												src="./assets/icons/facebook.svg"
+												alt="Facebook Icon"
+										/></a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.instagram.com/theappreciationagency/"
+											><img
+												src="./assets/icons/instagram.svg"
+												alt="Instagram icon"
+										/></a>
+									</li>
+									<li>
+										<a
+											target="_blank"
+											href="https://www.linkedin.com/company/appreciation-agency"
+											><img
+												src="./assets/icons/linkedin.svg"
+												alt="Linkedin Icon"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-mega-menu">
+					<div class="items">
+						<div class="back-icon">
+							<img
+								class="back"
+								src="./assets/icons/arrow-down.svg"
+								alt="Arrow Icon"
+							/>
+							<p>Back</p>
+						</div>
+
+						<a
+							href="./stationery-&-office-supplies"
+							class="product-card"
+						>
+							<img
+								src="./assets/images/home/mega-menu/stationery-&-office-supplies.webp"
+								alt="Office Suppliers"
+							/>
+							<h1>Office Supplies</h1>
+						</a>
+
+						<a href="./corporate-wear" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/corporate-wear.webp"
+								alt="Coporate Wear"
+							/>
+							<h1>Coporate Wear</h1>
+						</a>
+
+						<a href="./apparel" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/apparel.webp"
+								alt="Apparel"
+							/>
+							<h1>Apparel</h1>
+						</a>
+
+						<a href="./gifts" class="product-card">
+							<img
+								src="./assets/images/home/mega-menu/gifts.webp"
+								alt="Gifts"
+							/>
+							<h1>Gifts</h1>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
         `
-    }
+	}
 }
 
 class SpecialFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
        <footer>
         <div class="container">
             <div class="footer-links">
@@ -280,8 +362,33 @@ class SpecialFooter extends HTMLElement {
         </div>
     </footer>
         `
-    }
+	}
 }
 
-customElements.define('special-header', SpecialHeader)
-customElements.define('special-footer', SpecialFooter)
+customElements.define("special-header", SpecialHeader)
+customElements.define("special-footer", SpecialFooter)
+
+// mobile menu TODO:
+
+const menuIcon = document.querySelector("nav .menu-icon")
+const mobileNavItems = document.querySelector("nav .mobile-nav-items")
+const mobileMegaMenu = document.querySelector("nav .mobile-mega-menu")
+const mobileMegaMenuController = document.querySelector(
+	"nav .mobile-nav-items ul li .mobile-mega-menu-controller"
+)
+const backIcon = document.querySelector(
+	"nav .mobile-mega-menu .items .back-icon"
+)
+
+menuIcon.addEventListener("click", () => {
+	mobileNavItems.classList.toggle("active")
+	menuIcon.classList.toggle("active")
+})
+
+mobileMegaMenuController.addEventListener("click", () => {
+	mobileMegaMenu.classList.add("active")
+})
+
+backIcon.addEventListener("click", () => {
+	mobileMegaMenu.classList.remove("active")
+})
