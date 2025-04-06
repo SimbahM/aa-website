@@ -383,6 +383,7 @@ const backIcon = document.querySelector(
 menuIcon.addEventListener("click", () => {
 	mobileNavItems.classList.toggle("active")
 	menuIcon.classList.toggle("active")
+	document.body.classList.toggle("on-scroll")
 })
 
 mobileMegaMenuController.addEventListener("click", () => {

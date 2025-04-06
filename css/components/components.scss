@@ -19,6 +19,10 @@
     // outline: solid 1px lime;
 }
 
+body.on-scroll {
+    overflow: hidden;
+}
+
 img,
 Video,
 svg {

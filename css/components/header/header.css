@@ -154,10 +154,6 @@ nav .container .web-nav-items ul li:hover .mega-menu .container .product-card {
 
 @media (max-width: 768px) {
   nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 999;
   }
   nav .container .mobile-hamburger {
