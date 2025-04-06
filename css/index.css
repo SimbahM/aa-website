@@ -299,6 +299,7 @@ section.why-choose-us-grid .container .fast-turn-around p {
 }
 @media (max-width: 768px) {
   section.hero-image {
+    margin-top: 7vh;
     padding: 0 20px;
     height: 60vh;
   }
@@ -423,8 +424,9 @@ section.why-choose-us-grid .container .fast-turn-around p {
 }
 @media (max-width: 425px) {
   section.hero-image {
+    margin-top: 7vh;
     padding: 0 20px;
-    height: 50vh;
+    height: 60vh;
   }
   section.hero-image .container {
     width: 100%;

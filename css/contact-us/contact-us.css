@@ -82,6 +82,7 @@ section.contacts .container .image img {
   section.contacts {
     padding: 0 20px;
     display: flex;
+    margin-top: 7vh;
   }
   section.contacts .container {
     width: 100%;
