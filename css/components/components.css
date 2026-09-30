@@ -60,8 +60,7 @@ html {
   font-size: 14px;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: #1a3149;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -77,8 +76,7 @@ html {
   font-size: 14px;
   text-transform: uppercase;
   background-color: var(--primary-color);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;

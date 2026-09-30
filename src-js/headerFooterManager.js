@@ -1,6 +1,6 @@
 class SpecialHeader extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
         <nav>
 			<div class="container">
 				<a href="/" class="logo">
@@ -198,12 +198,12 @@ class SpecialHeader extends HTMLElement {
 			</div>
 		</nav>
         `
-	}
+    }
 }
 
 class SpecialFooter extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
        <footer>
         <div class="container">
             <div class="footer-links">
@@ -355,14 +355,14 @@ class SpecialFooter extends HTMLElement {
                 <span>
                     Copyright © 2025 Appreciation Agency. All Rights Reserved.
                 </span>
-                <a target="_blank" href="https://simbahm.com/">
-                    <img src="./assets/icons/designed-by-simbahm.svg" alt="">
+                <a target="_blank" href="https://lynqstudio.space/">
+                    <img src="./assets/icons/designed-by-lynq-studio.svg" alt="Designed by LYNQ Studio">
                 </a>
             </div>
         </div>
     </footer>
         `
-	}
+    }
 }
 
 customElements.define("special-header", SpecialHeader)
@@ -374,22 +374,22 @@ const menuIcon = document.querySelector("nav .menu-icon")
 const mobileNavItems = document.querySelector("nav .mobile-nav-items")
 const mobileMegaMenu = document.querySelector("nav .mobile-mega-menu")
 const mobileMegaMenuController = document.querySelector(
-	"nav .mobile-nav-items ul li .mobile-mega-menu-controller"
+    "nav .mobile-nav-items ul li .mobile-mega-menu-controller"
 )
 const backIcon = document.querySelector(
-	"nav .mobile-mega-menu .items .back-icon"
+    "nav .mobile-mega-menu .items .back-icon"
 )
 
 menuIcon.addEventListener("click", () => {
-	mobileNavItems.classList.toggle("active")
-	menuIcon.classList.toggle("active")
-	document.body.classList.toggle("on-scroll")
+    mobileNavItems.classList.toggle("active")
+    menuIcon.classList.toggle("active")
+    document.body.classList.toggle("on-scroll")
 })
 
 mobileMegaMenuController.addEventListener("click", () => {
-	mobileMegaMenu.classList.add("active")
+    mobileMegaMenu.classList.add("active")
 })
 
 backIcon.addEventListener("click", () => {
-	mobileMegaMenu.classList.remove("active")
+    mobileMegaMenu.classList.remove("active")
 })

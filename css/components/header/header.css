@@ -1,8 +1,7 @@
 nav {
   height: 7vh;
   background-color: rgba(255, 255, 255, 0.8666666667);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   display: flex;
   border-bottom: 1px solid rgb(217, 217, 217);
   padding: 0 20px;
