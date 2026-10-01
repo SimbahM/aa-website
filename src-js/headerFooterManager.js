@@ -353,7 +353,7 @@ class SpecialFooter extends HTMLElement {
 
             <div class="copyright">
                 <span>
-                    Copyright © 2025 Appreciation Agency. All Rights Reserved.
+                    Copyright © 2026 Appreciation Agency. All Rights Reserved.
                 </span>
                 <a target="_blank" href="https://lynqstudio.space/">
                     <img src="./assets/icons/designed-by-lynq-studio.svg" alt="Designed by LYNQ Studio">

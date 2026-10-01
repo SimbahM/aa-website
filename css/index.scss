@@ -7,6 +7,21 @@ section.hero-image {
     background-size: cover;
     padding: 0 20px;
 
+    @media (max-width: 1024px) {
+        padding: 0 20px;
+        height: 80vh;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+        height: 60vh;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 20px;
+        height: 60vh;
+    }
+
     .container {
         max-width: 1000px;
         margin: 0 auto;
@@ -18,10 +33,39 @@ section.hero-image {
         color: white;
         gap: 30px;
 
+        @media (max-width: 1024px) {
+            max-width: 100%;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            gap: 30px;
+            align-items: center;
+        }
+
+        @media (max-width: 425px) {
+            width: 100%;
+            gap: 30px;
+        }
+
         h1.title {
             font-size: 70px;
             font-weight: 500;
             text-align: center;
+
+            @media (max-width: 1024px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 30px;
+                text-align: center;
+            }
         }
 
         span.subhead {
@@ -30,6 +74,87 @@ section.hero-image {
             width: 700px;
             line-height: 1.5em;
             text-align: center;
+
+            @media (max-width: 1024px) {
+                font-size: 30px;
+                color: white;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+                width: 100%;
+                line-height: 1.5em;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+section.uniforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+
+    @media (max-width: 1024px) {
+        padding: 30px 30px 0 30px;
+    }
+
+    @media (max-width: 673px) {
+        padding: 20px 20px 0 20px;
+    }
+
+    @media (max-width: 425px) {
+        padding: 10px 10px 0 10px;
+    }
+
+    .container {
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding: 100px 0 30px 0;
+        gap: 20px;
+
+        @media (max-width: 1024px) {
+            width: 100%;
+            border: 1px solid rgb(205, 205, 205);
+        }
+
+        img {
+            width: 900px;
+
+            @media (max-width: 1024px) {
+                width: 700px;
+            }
+
+            @media (max-width: 768px) {
+                width: 400px;
+            }
+
+            @media (max-width: 425px) {
+                width: 300px;
+            }
+        }
+
+        h1.title {
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 25px;
+
+            @media (max-width: 1024px) {
+                font-size: 23px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 17px;
+            }
         }
     }
 }
@@ -37,6 +162,18 @@ section.hero-image {
 section.half-image {
     display: flex;
     margin: 100px 0 100px 0;
+
+    @media (max-width: 1024px) {
+        margin: 30px 30px;
+    }
+
+    @media (max-width: 673px) {
+        margin: 20px 20px;
+    }
+
+    @media (max-width: 425px) {
+        margin: 10px 10px;
+    }
 
     .container {
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
@@ -54,10 +191,43 @@ section.half-image {
         padding-bottom: 30px;
         gap: 20px;
 
+        @media (max-width: 1024px) {
+            height: 300px;
+            width: 100%;
+            padding-bottom: 30px;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            height: 500px;
+            width: 100%;
+            padding-bottom: 30px;
+            gap: 20px;
+        }
+
+        @media (max-width: 425px) {
+            height: 450px;
+            width: 100%;
+            padding-bottom: 30px;
+            gap: 20px;
+        }
+
         h1.title {
             color: white;
             text-align: center;
             font-size: 25px;
+
+            @media (max-width: 1024px) {
+                font-size: 23px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 23px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 17px;
+            }
         }
 
         p {
@@ -66,6 +236,23 @@ section.half-image {
             width: 400px;
             text-align: center;
             font-weight: 300;
+
+            @media (max-width: 1024px) {
+                font-size: 20px;
+                width: 400px;
+                font-weight: 300;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 20px;
+                width: 300px;
+                font-weight: 300;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 17px;
+                width: 270px;
+            }
         }
     }
 
@@ -78,33 +265,23 @@ section.half-image {
     }
 }
 
-section.uniforms {
-    margin: 100px 0 100px 0;
-
-    .container {
-        margin: 0 auto;
-        width: 1000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        padding: 100px 0 30px 0;
-        gap: 20px;
-
-        img {
-            width: 900px;
-        }
-
-        h1.title {
-            color: var(--primary-color);
-            text-align: center;
-            font-size: 25px;
-        }
-    }
-}
-
 section.grid {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 673px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 10px;
+    }
 
     .container {
         display: grid;
@@ -112,6 +289,21 @@ section.grid {
         margin: 0 auto;
         width: 1000px;
         gap: 30px;
+
+        @media (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        @media (max-width: 673px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width: 425px) {
+            gap: 10px;
+        }
 
         .gifts {
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
@@ -135,17 +327,68 @@ section.grid {
             gap: 20px;
             height: 500px;
 
+            @media (max-width: 1024px) {
+                padding-bottom: 30px;
+                gap: 20px;
+                height: 500px;
+            }
+
+            @media (max-width: 768px) {
+                padding-bottom: 30px;
+                gap: 20px;
+                height: 500px;
+                font-size: 17px;
+            }
+
+            @media (max-width: 425px) {
+                padding-bottom: 30px;
+                gap: 20px;
+                height: 450px;
+                font-size: 17px;
+            }
+
             .gifts-title {
                 color: white;
+
+                @media (max-width: 1024px) {
+                    font-size: 23px;
+                }
+
+                @media (max-width: 425px) {
+                    font-size: 17px;
+                }
             }
 
             .apparel-title {
                 color: var(--primary-color);
+
+                @media (max-width: 1024px) {
+                    font-size: 23px;
+                }
+
+                @media (max-width: 425px) {
+                    font-size: 17px;
+                }
             }
 
             img {
                 width: 230px;
                 margin-bottom: 20px;
+
+                @media (max-width: 1024px) {
+                    width: 230px;
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    width: 230px;
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width: 425px) {
+                    width: 200px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -158,454 +401,79 @@ section.title {
     align-items: center;
     padding: 100px 0 50px 0;
     color: var(--primary-color);
-}
 
-section.why-choose-us-grid {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 1000px;
-        margin: 0 auto;
-        gap: 30px;
-
-        .customisation,
-        .quality-assurance,
-        .fast-turn-around {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--gray);
-            padding: 100px 20px;
-            gap: 20px;
-
-            img {
-                width: 50px;
-                margin-bottom: 40px;
-            }
-
-            h1 {
-                text-align: center;
-                font-size: 23px;
-                color: var(--primary-color);
-            }
-
-            p {
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media (max-width: 1024px) {
-    section.hero-image {
-        padding: 0 20px;
-        height: 80vh;
-
-        .container {
-            max-width: 100%;
-            gap: 30px;
-
-            h1.title {
-                font-size: 50px;
-            }
-
-            span.subhead {
-                font-size: 30px;
-                color: white;
-            }
-        }
-    }
-
-    section.half-image {
-        display: flex;
-        margin: 0 20px 20px 20px;
-
-        .container {
-            height: 300px;
-            width: 100%;
-            padding-bottom: 30px;
-            gap: 20px;
-
-            h1.title {
-                font-size: 23px;
-            }
-
-            p {
-                font-size: 20px;
-                width: 400px;
-                font-weight: 300;
-            }
-        }
-    }
-
-    section.uniforms {
-        margin: 20px 0 20px 0;
-        padding: 0 20px;
-
-        .container {
-            margin: 0 auto;
-            width: 100%;
-            padding: 100px 0 30px 0;
-            gap: 20px;
-            border: 1px solid var(--primary-color);
-            gap: 20px;
-
-            img {
-                width: 700px;
-            }
-
-            h1.title {
-                font-size: 23px;
-            }
-        }
-    }
-
-    section.grid {
-        padding: 0 0 100px 0;
-        margin: 0 20px;
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin: 0 auto;
-            width: 100%;
-            gap: 20px;
-
-            .gifts,
-            .apparel {
-                padding-bottom: 30px;
-                gap: 20px;
-                height: 500px;
-
-                h1.apparel-title,
-                h1.gifts-title {
-                    font-size: 23px;
-                }
-
-                img {
-                    width: 230px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-
-    section.title {
-        padding: 70px 0 30px 0;
-    }
-
-    section.why-choose-us-grid {
-        padding: 0 0 20px 0;
-        margin: 0 20px;
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            width: 100%;
-            margin: 0 auto;
-            gap: 20px;
-
-            .customisation,
-            .quality-assurance,
-            .fast-turn-around {
-                padding: 100px 20px;
-                gap: 20px;
-
-                img {
-                    width: 50px;
-                    margin-bottom: 40px;
-                }
-
-                h1 {
-                    text-align: center;
-                    font-size: 17px;
-                }
-
-                p {
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    section.hero-image {
-        padding: 0 20px;
-        height: 60vh;
-
-        .container {
-            max-width: 100%;
-            gap: 30px;
-            align-items: center;
-
-            h1.title {
-                font-size: 40px;
-            }
-
-            span.subhead {
-                font-size: 25px;
-                width: 100%;
-                line-height: 1.5em;
-            }
-        }
-    }
-
-    section.half-image {
-        display: flex;
-        margin: 0 20px 20px 20px;
-
-        .container {
-            height: 300px;
-            width: 100%;
-            padding-bottom: 30px;
-            gap: 20px;
-
-            h1.title {
-                font-size: 23px;
-            }
-
-            p {
-                font-size: 20px;
-                width: 300px;
-                font-weight: 300;
-            }
-        }
-    }
-
-    section.uniforms {
-        margin-bottom: 20px;
-        padding: 0 20px;
-
-        .container {
-            margin: 0 auto;
-            width: 100%;
-            padding: 70px 0 30px 0;
-            gap: 20px;
-            border: 1px solid var(--primary-color);
-            gap: 20px;
-
-            img {
-                width: 400px;
-            }
-
-            h1.title {
-                font-size: 23px;
-            }
-        }
-    }
-
-    section.grid {
-        padding: 0 0 100px 0;
-        margin: 0 20px;
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            margin: 0 auto;
-            width: 100%;
-            gap: 20px;
-
-            .apparel {
-                background-color: var(--gray);
-            }
-
-            .gifts,
-            .apparel {
-                padding-bottom: 30px;
-                gap: 20px;
-                height: 500px;
-                font-size: 17px;
-
-                h1.apparel-title,
-                h1.gifts-title {
-                    font-size: 23px;
-                }
-
-                img {
-                    width: 230px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-
-    section.title {
-        padding: 70px 0 30px 0;
-    }
-
-    section.why-choose-us-grid {
-        padding: 0 0 20px 0;
-        margin: 0 20px;
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            width: 100%;
-            margin: 0 auto;
-            gap: 20px;
-
-            .customisation,
-            .quality-assurance,
-            .fast-turn-around {
-                padding: 100px 20px;
-                gap: 20px;
-
-                img {
-                    width: 50px;
-                    margin-bottom: 40px;
-                }
-
-                h1 {
-                    text-align: center;
-                    font-size: 17px;
-                }
-
-                p {
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 425px) {
-    section.hero-image {
-        padding: 0 20px;
-        height: 60vh;
-
-        .container {
-            width: 100%;
-            gap: 30px;
-
-            h1.title {
-                font-size: 30px;
-                text-align: center;
-            }
-
-            span.subhead {
-                font-size: 22px;
-                text-align: center;
-            }
-        }
-    }
-
-    section.half-image {
-        display: flex;
-        margin: 0 10px 10px 10px;
-
-        .container {
-            height: 250px;
-            width: 100%;
-            padding-bottom: 30px;
-            gap: 20px;
-
-            h1.title {
-                font-size: 17px;
-            }
-
-            p {
-                font-size: 17px;
-                width: 270px;
-            }
-        }
-    }
-
-    section.uniforms {
-        margin: 10px 0 10px 0;
-        padding: 0 10px;
-
-        .container {
-            margin: 0 auto;
-            width: 100%;
-            padding: 70px 0 30px 0;
-            gap: 20px;
-
-            img {
-                width: 300px;
-            }
-
-            h1.title {
-                font-size: 17px;
-            }
-        }
-    }
-
-    section.grid {
-        padding: 0 0 50px 0;
-        margin: 0 10px;
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            margin: 0 auto;
-            width: 100%;
-            gap: 10px;
-
-            .apparel {
-                background-color: var(--gray);
-            }
-
-            .gifts,
-            .apparel {
-                padding-bottom: 30px;
-                gap: 20px;
-                height: 450px;
-                font-size: 17px;
-
-                h1.apparel-title,
-                h1.gifts-title {
-                    font-size: 17px;
-                }
-
-                img {
-                    width: 200px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-    }
-
-    section.title {
-        padding: 70px 0 30px 0;
+    @media (max-width: 425px) {
 
         h1 {
             font-size: 17px;
         }
     }
+}
 
-    section.why-choose-us-grid {
-        padding: 0 0 10px 0;
-        margin: 0 10px;
+section.why-choose-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            width: 100%;
-            margin: 0 auto;
-            gap: 10px;
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding: 30px 30px 0 30px;
+    }
 
-            .customisation,
-            .quality-assurance,
-            .fast-turn-around {
-                padding: 50px 20px;
-                gap: 20px;
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-                img {
-                    width: 50px;
-                    margin-bottom: 40px;
-                }
+    @media (max-width: 673px) {
+        padding: 20px 20px 0 20px;
+        gap: 20px;
+    }
 
-                h1 {
-                    text-align: center;
-                    font-size: 17px;
-                }
+    @media (max-width: 425px) {
+        gap: 10px;
+        padding: 10px 10px 0 10px;
+    }
 
-                p {
-                    text-align: center;
-                }
+    .customisation,
+    .quality-assurance,
+    .fast-turn-around {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--gray);
+        padding: 100px 20px;
+        gap: 20px;
+
+        @media (max-width: 1024px) {
+            padding: 50px 20px;
+        }
+
+        img {
+            width: 50px;
+            margin-bottom: 40px;
+
+            @media (max-width: 1024px) {
+                width: 50px;
+                margin-bottom: 40px;
             }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 23px;
+            color: var(--primary-color);
+
+            @media (max-width: 1024px) {
+                text-align: center;
+                font-size: 17px;
+            }
+        }
+
+        p {
+            text-align: center;
         }
     }
 }

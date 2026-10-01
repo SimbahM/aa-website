@@ -202,6 +202,7 @@ nav {
         z-index: 999;
 
         .container {
+
             .mobile-hamburger {
                 width: 20px;
                 height: 7vh;
@@ -399,6 +400,7 @@ nav {
                     transition-delay: 0s, 0.3s;
                     transition-duration: 0.3s;
                 }
+
                 span.line2 {
                     top: 0;
                     transform: rotateZ(-45deg);
